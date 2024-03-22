@@ -1,6 +1,6 @@
 # Added by Kyo @2024-03-20
 # Change TERM to fbterm when $FBTERM is 1 (assuming $FBTERM is 1 when fbterm started).
-if [ $TERM == "linux" ] && [ -n $FBTERM ]
+if [ $TERM == "linux" ] && [ -n "$FBTERM" ]
 then
     export TERM=fbterm
 fi
